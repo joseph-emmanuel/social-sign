@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-
+/* ---------------- */
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 8vh;    
+    min-height: 8vh;
+    background-image: url("/assets/images/navbackground.jpg");  
     background-color: #5d4954;
     font-family: 'Poppins',sans-serif;
 
@@ -28,7 +29,9 @@ nav{
 }
 .nav-links li{
     list-style: none;
+   
 }
+
 .nav-links a{
     color: rgb(226, 226, 226);
     text-decoration: none;
@@ -64,6 +67,8 @@ nav{
         right: 0px;
         height: 92vh;;
         top: 8vh;
+        
+    background-image: url("/assets/images/navbackground.jpg");  
         background-color: #5d4954;
         display: flex;
         flex-direction: column;
@@ -104,4 +109,12 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+.logoimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+    max-width: 70%;
+    max-height: 70%;
 }
