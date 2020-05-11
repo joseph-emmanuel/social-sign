@@ -51,13 +51,18 @@ nav{
     transition: all 0.3s ease;
 
 }
-@media screen and (max-width:1024px){
+@media screen and (max-width:1368px){
     .nav-links{
         display: flex;
         justify-content: space-around;
         width: 60%;
     }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    /* //CSS */
+    
+  }
 @media screen and (max-width:768px){
     body{
         overflow: hidden;
