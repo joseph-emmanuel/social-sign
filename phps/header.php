@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/slideshow.css">
     <link rel="stylesheet" href="assets/css/heading.css">
     <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/sign_up.css">
 
     <title>NAVIGATIONn</title>
 </head>

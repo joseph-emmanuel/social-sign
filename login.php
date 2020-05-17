@@ -6,7 +6,7 @@ require "phps/header.php"
     <h1>Please enter your credentials</h1>
 </div>
 <!-- delete -->
-<form action="">
+<form action="" method="post">
     <h2><span class="entypo-login"><i class="fa fa-sign-in"></i></span> Login</h2>
     <button class="submit"><span class="entypo-lock"><i class="fa fa-lock"></i></span></button>
     <span class="entypo-user inputUserIcon">
