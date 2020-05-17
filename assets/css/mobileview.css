@@ -14,7 +14,7 @@
     height: 92vh;;
     top: 8vh;
     
-background-image: url("/assets/images/navbackground.jpg");  
+background-image: url("/assets/css/images/navbackground.jpg");
     background-color: #5d4954;
     display: flex;
     flex-direction: column;
