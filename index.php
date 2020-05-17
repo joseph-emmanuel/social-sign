@@ -1,5 +1,5 @@
 <?php
-require "header_footer/header.php"
+require "phps/header.php"
 ?>
 <div class="typewriter">
     <h1>You can speak for the following topics here</h1>
@@ -49,5 +49,5 @@ require "header_footer/header.php"
 <script src="assets/js/slideshow.js"></script>
 
 <?php
-require  "header_footer/footer.php"
+require  "phps/footer.php"
 ?>

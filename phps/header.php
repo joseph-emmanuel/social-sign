@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/slideshow.css">
     <link rel="stylesheet" href="assets/css/heading.css">
-    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 
     <title>NAVIGATIONn</title>
 </head>
@@ -35,7 +35,7 @@
             <a href="login.php">login</a>
         </li>
         <li id="id2">
-            <a href="#">register</a>
+            <a href="signup.php">register</a>
         </li>
     </ul>
     <div class="burger">
