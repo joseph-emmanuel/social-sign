@@ -1,8 +1,10 @@
 <?php
-require "phps/header.php"
+require "phps/header.php";
+session_start();
+echo 'Hi, ' . $_SESSION["userMail"] ;
 ?>
 <div class="typewriter">
-    <h1>You can speak for the following topics here</h1>
+    <h1>You can speak for</h1>
 </div>
 
 <div class="slideshow-container">
