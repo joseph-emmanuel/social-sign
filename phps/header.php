@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/heading.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/sign_up.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
 
     <title>NAVIGATIONn</title>
 </head>

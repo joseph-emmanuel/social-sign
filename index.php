@@ -1,7 +1,7 @@
 <?php
 require "phps/header.php";
 session_start();
-echo 'Hi, ' . $_SESSION["userMail"] ;
+//echo 'Hi, ' . $_SESSION["userMail"] ;
 ?>
 <div class="typewriter">
     <h1>You can speak for</h1>
