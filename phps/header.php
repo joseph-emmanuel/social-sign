@@ -31,7 +31,7 @@
             <a href="#">Petitions</a>
         </li>
         <li class="id1">
-            <a href="#">Request</a>
+            <a href="user_requests.php">Request</a>
         </li>
         <li id="id2">
             <a href="login.php">login</a>
