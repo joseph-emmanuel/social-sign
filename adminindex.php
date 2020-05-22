@@ -1,6 +1,22 @@
 <?php
 require 'includes/dbh.inc.php';
 
+    $user = "Admin";
+    $email ="admin@myself.com";
+    $sql="select * from users where uidUsers!=? or emailUsers!=?;";
+    $stmt=mysqli_stmt_init($conn);
+    if (!mysqli_stmt_prepare($stmt,$sql)){
+        header("location: ../index.php?error=sqlerror1");
+        exit();
+    }
+    else {
+        mysqli_stmt_bind_param($stmt, "ss", $user, $email);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
+        while ($row = mysqli_fetch_array($result)) {
+            echo $row['uidUsers']; // Print a single column data
+        }
+    }
 ?>
 <!doctype html>
 <html lang="en">
@@ -30,7 +46,7 @@ require 'includes/dbh.inc.php';
     </div>
     <ul class="nav-links">
         <li>
-            <a href="#">Users</a></li>
+            <a href="users.php">Users</a></li>
         <li class="id1">
             <a href="#">Requests</a>
         </li>
@@ -52,6 +68,15 @@ require 'includes/dbh.inc.php';
 <div class="typewriter">
     <h1>Welcome Admin</h1>
 </div>
+
+
+
+
+
+
+
+
+
 <script src="assets/js/app.js"></script>
 <script src="assets/js/slideshow.js"></script>
 
