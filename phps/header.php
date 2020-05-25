@@ -28,7 +28,7 @@
             <a href="#">Home</a
             ></li>
         <li>
-            <a href="#">Petitions</a>
+            <a href="user_petitions.php">Petitions</a>
         </li>
         <li class="id1">
             <a href="user_requests.php">Request</a>

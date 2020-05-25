@@ -1,7 +1,3 @@
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
 
 @media screen and (max-width:768px){
   
@@ -13,8 +9,7 @@
     right: 0px;
     height: 92vh;;
     top: 8vh;
-    
-background-image: url("/assets/css/images/navbackground.jpg");
+    background-image: url("/assets/css/images/navbackground.jpg");
     background-color: #5d4954;
     display: flex;
     flex-direction: column;

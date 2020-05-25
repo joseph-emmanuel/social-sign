@@ -37,7 +37,7 @@ if (isset($_POST['login-submit'])) {
                         header("location: ../adminindex.php?login=sucessadmin");
                     }
                     else{
-                        header("location: ../index.php?login=sucess");
+                            header("location: ../index.php?login=sucess");
                     }
 
                     exit();
