@@ -2,6 +2,14 @@
 require "phps/header.php";
 session_start();
 //echo 'Hi, ' . $_SESSION["userMail"] ;
+if ($_SESSION["userMail"]==null)
+{
+    echo 'not logged in';
+}
+else
+{
+    echo 'you are  logged in as ' .$_SESSION["userUId"];
+}
 ?>
 <div class="typewriter">
     <h1>You can speak for</h1>

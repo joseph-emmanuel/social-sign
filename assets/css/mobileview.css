@@ -2,9 +2,13 @@
 @media screen and (max-width:768px){
   
   body{
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
+    body > nav > ul{
+        opacity: 1;
+    }
 .nav-links{
+
     position: absolute;
     right: 0px;
     height: 92vh;;
@@ -19,7 +23,7 @@
     transition : transform 0.5s ease-in;
 }
 .nav-links li{
-    opacity: 0;
+    opacity: 1;
 }
 .burger{
     display: block;

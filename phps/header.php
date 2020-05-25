@@ -39,6 +39,9 @@
         <li id="id2">
             <a href="signup.php">register</a>
         </li>
+        <li id="id2">
+            <a href="signup.php">logout</a>
+        </li>
     </ul>
     <div class="burger">
         <div class="line1"></div>

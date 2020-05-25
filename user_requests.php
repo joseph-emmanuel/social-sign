@@ -10,7 +10,8 @@ require "phps/header.php";
     <input type="submit" value="Send Request">
 </form>
 
-
+<script src="assets/js/app.js"></script>
+<script src="assets/js/slideshow.js"></script>
 
 <?php
 require "phps/footer.php"

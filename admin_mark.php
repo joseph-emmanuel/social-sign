@@ -11,14 +11,14 @@ if (isset($_GET['as'],$_GET['item'])){
 
     switch ($as){
         case 'done':
-            $doneQuery=$db->prepare("update content set done=1 where cid=:item ");
+            $doneQuery=$db->prepare("update content set approved=1 where cid=:item ");
             $doneQuery->execute(['item'=>$item]);
             break;
         case 'notdone':
-            $doneQuery=$db->prepare("update content set done=0 where cid=:item ");
+            $doneQuery=$db->prepare("update content set approved=0 where cid=:item ");
             $doneQuery->execute(['item'=>$item]);
             break;
     }
 
 }
-header('Location:user_petitions.php');
+header('Location:admin_petitions.php');

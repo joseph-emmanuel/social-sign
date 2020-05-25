@@ -33,7 +33,7 @@ if (isset($_POST['login-submit'])) {
                     $_SESSION['userId']=$row['idUsers'];
                     $_SESSION['userUId']=$row['uidUsers'];
                     $_SESSION['userMail']=$row['emailUsers'];
-                    if ($row['uidUsers']=="admin"){
+                    if ($row['uidUsers']=="Admin"){
                         header("location: ../adminindex.php?login=sucessadmin");
                     }
                     else{

@@ -48,7 +48,7 @@ require 'includes/dbh.inc.php';
         <li>
             <a href="users.php">Users</a></li>
         <li class="id1">
-            <a href="#">Requests</a>
+            <a href="admin_petitions.php">Requests</a>
         </li>
         <li class="id1">
             <a href="#">Messages</a>
