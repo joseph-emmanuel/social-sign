@@ -25,7 +25,7 @@
     </div>
     <ul class="nav-links">
         <li>
-            <a href="#">Home</a
+            <a href="index.php">Home</a
             ></li>
         <li>
             <a href="user_petitions.php">Petitions</a>
@@ -40,7 +40,7 @@
             <a href="signup.php">register</a>
         </li>
         <li id="id2">
-            <a href="signup.php">logout</a>
+            <a href="logout.php">logout</a>
         </li>
     </ul>
     <div class="burger">

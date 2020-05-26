@@ -13,9 +13,9 @@ require 'includes/dbh.inc.php';
         mysqli_stmt_bind_param($stmt, "ss", $user, $email);
         mysqli_stmt_execute($stmt);
         $result = mysqli_stmt_get_result($stmt);
-        while ($row = mysqli_fetch_array($result)) {
-            echo $row['uidUsers']; // Print a single column data
-        }
+//        while ($row = mysqli_fetch_array($result)) {
+////            echo $row['uidUsers']; // Print a single column data
+//        }
     }
 ?>
 <!doctype html>
@@ -26,7 +26,7 @@ require 'includes/dbh.inc.php';
 
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To Do</title>
+    <title>Admin</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link  href="css/style.css" rel="stylesheet">
@@ -54,7 +54,7 @@ require 'includes/dbh.inc.php';
             <a href="#">Messages</a>
         </li>
         <li class="id1">
-            <a href="#">Logout</a>
+            <a href="index.php">Logout</a>
         </li>
     </ul>
     <div class="burger">

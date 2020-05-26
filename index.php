@@ -2,14 +2,14 @@
 require "phps/header.php";
 session_start();
 //echo 'Hi, ' . $_SESSION["userMail"] ;
-if ($_SESSION["userMail"]==null)
-{
-    echo 'not logged in';
-}
-else
-{
-    echo 'you are  logged in as ' .$_SESSION["userUId"];
-}
+//if ($_SESSION["userMail"]==null)
+//{
+//    echo 'not logged in';
+//}
+//else
+//{
+////    echo 'you are  logged in as ' .$_SESSION["userUId"];
+//}
 ?>
 <div class="typewriter">
     <h1>You can speak for</h1>
@@ -42,7 +42,7 @@ else
     <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="assets/slideshow/women.jpg" style="width:100%">
-        <div class="text">Human Rights</div>
+        <div class="text">Women Rights</div>
     </div>
 
 </div>

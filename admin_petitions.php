@@ -1,7 +1,7 @@
 <?php
 
 require_once 'includes/init.inc.php';
-$itemsQuery=$db->prepare("select * from content approved=0");
+$itemsQuery=$db->prepare("select * from content where approved=0");
 $itemsQuery->execute(['user'=>$_SESSION['userId']]);
 $items=$itemsQuery->rowCount()?$itemsQuery:[];
 
@@ -48,7 +48,7 @@ $items=$itemsQuery->rowCount()?$itemsQuery:[];
             <a href="#">Messages</a>
         </li>
         <li class="id1">
-            <a href="#">Logout</a>
+            <a href="index.php">Logout</a>
         </li>
     </ul>
     <div class="burger">
@@ -67,7 +67,7 @@ $items=$itemsQuery->rowCount()?$itemsQuery:[];
     <?php if (!empty($items)):?>
         <ul class="items">
             <?php foreach ($items as $item):?>
-                <li><span class="item<?php echo $item['done']?'done':'' ?>"><?php echo $item['content']; ?> </span>
+                <li><span class="item<?php echo $item['approved']?'approved':'' ?>"><?php echo $item['content']; ?> </span>
                     <?php if (!$item['done']):?>
                         <a href="admin_mark.php?as=done&item=<?php echo $item['cid']; ?>" class="done-button"> Mark as approved</a>
                     <?php else:?>

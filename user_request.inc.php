@@ -7,6 +7,10 @@ $uid= $_SESSION["userId"];
 $done=0;
 $approved=0;
 //
+//echo $content .'by';
+//echo $uid;
+//echo $done;
+//echo $approved;
 if (empty($content)){
     header("location: ../user_request.php?error=emptyfields&uid=".uid);
     exit();
@@ -21,9 +25,8 @@ else {
 //        $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
         mysqli_stmt_bind_param($stmt, "ss", $content, $uid);
         mysqli_stmt_execute($stmt);
-        header("location: ../user_requests.php?sucess=sucess");
+        header("location: user_request.php?sucess=trueeee");
         exit();
-//        header("location: ../signup.php?error=sqlerror2");
     }
     }
 mysqli_stmt_close($stmt);

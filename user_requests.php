@@ -9,10 +9,8 @@ require "phps/header.php";
     <textarea name="content" cols="45" rows="5"></textarea><br><br>
     <input type="submit" value="Send Request">
 </form>
-
 <script src="assets/js/app.js"></script>
 <script src="assets/js/slideshow.js"></script>
-
 <?php
 require "phps/footer.php"
 ?>
