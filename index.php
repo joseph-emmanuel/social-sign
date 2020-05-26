@@ -11,8 +11,14 @@ session_start();
 ////    echo 'you are  logged in as ' .$_SESSION["userUId"];
 //}
 ?>
-<div class="typewriter">
-    <h1>You can speak for</h1>
+<div id=containerx12>
+    Speak for
+    <div id=flip>
+        <div><div>rights</div></div>
+        <div><div>lifeStyle</div></div>
+        <div><div>Everything</div></div>
+    </div>
+    you want!
 </div>
 
 <div class="slideshow-container">
@@ -55,6 +61,7 @@ session_start();
     <span class="dot"></span>
     <span class="dot"></span>
 </div>
+
 <script src="assets/js/app.js"></script>
 <script src="assets/js/slideshow.js"></script>
 
