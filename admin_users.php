@@ -1,8 +1,8 @@
 <?php
 
 require_once 'includes/init.inc.php';
-$itemsQuery=$db->prepare("select * from content where approved=0");
-$itemsQuery->execute(['user'=>$_SESSION['userId']]);
+$itemsQuery=$db->prepare("select * from users");
+$itemsQuery->execute();
 $items=$itemsQuery->rowCount()?$itemsQuery:[];
 
 //foreach ($items as $item) {
@@ -62,32 +62,30 @@ $items=$itemsQuery->rowCount()?$itemsQuery:[];
 <div class="typewriter">
     <h1>Welcome Admin</h1>
 
-<div class="list">
-    <h1 class="header"> Current Petitions</h1>
-    <?php if (!empty($items)):?>
-        <ul class="items">
-            <?php foreach ($items as $item):?>
-                <li><span class="item<?php echo $item['approved']?'approved':'' ?>"><?php echo $item['content']; ?> </span>
-                    <?php if (!$item['done']):?>
-                        <a href="admin_mark.php?as=done&item=<?php echo $item['cid']; ?>" class="done-button"> Mark as approved</a>
-                    <?php else:?>
-                        <a href="admin_mark.php?as=notdone&item=<?php echo $item['cid']; ?>" class="done-button"> Mark as not approved</a>
-                    <?php endif;  ?>
-                </li>
-            <?php endforeach;?>
-        </ul>
-    <?php else:?>
-        <p>You haven't have  any items to approve yet</p>
-    <?php endif;?>
-</div>
-<!--<div style="text-align:center">-->
-<!--    <span class="dot"></span>-->
-<!--    <span class="dot"></span>-->
-<!--    <span class="dot"></span>-->
-<!--    <span class="dot"></span>-->
-<!--    <span class="dot"></span>-->
-<!--</div>-->
-<script src="assets/js/app.js"></script>
-<script src="assets/js/slideshow.js"></script>
+    <div class="list">
+        <h1 class="header"> Current Users</h1>
+        <?php if (!empty($items)):?>
+            <ul class="items">
+                <?php foreach ($items as $item):?>
+                    <li><span class="item"><?php echo $item['uidUsers']; ?> </span>
+
+                            <a href="admin_mark.php?as=done&item=<?php echo $item['idUsers']; ?>" class="done-button"> Delete this user</a>
+
+                    </li>
+                <?php endforeach;?>
+            </ul>
+        <?php else:?>
+            <p>You haven't have  any items to approve yet</p>
+        <?php endif;?>
+    </div>
+    <!--<div style="text-align:center">-->
+    <!--    <span class="dot"></span>-->
+    <!--    <span class="dot"></span>-->
+    <!--    <span class="dot"></span>-->
+    <!--    <span class="dot"></span>-->
+    <!--    <span class="dot"></span>-->
+    <!--</div>-->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/slideshow.js"></script>
 </body>
 </html>
