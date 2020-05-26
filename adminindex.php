@@ -46,7 +46,7 @@ require 'includes/dbh.inc.php';
     </div>
     <ul class="nav-links">
         <li>
-            <a href="users.php">Users</a></li>
+            <a href="admin_users.php">Users</a></li>
         <li class="id1">
             <a href="admin_petitions.php">Requests</a>
         </li>
