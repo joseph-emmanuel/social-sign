@@ -69,7 +69,7 @@ nav{
         /*overflow: hidden;*/
     }
     .nav-links{
-        position: absolute;;
+        position: relative;;
         right: 0px;
         height: 92vh;;
         top: 8vh;
@@ -84,7 +84,7 @@ nav{
         transition : transform 0.5s ease-in;
     }
     .nav-links li{
-        opacity: 0;
+        opacity: 1;
     }
     .burger{
         display: block;
